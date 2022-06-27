@@ -11,10 +11,7 @@ app.use(express.json({ limit: "1mb" }));
 const database = new Datastore("database.db");
 database.loadDatabase();
 
-app.get("/api/rsvp/:type", (request, response) => {
-  const type = request.params.type.split(",");
-  const guestType = type[0];
-  const isAttending = type[1];
+app.get("/api/rsvp", (request, response) => {
   database.find({}, (err, data) => {
     if (err) {
       response.end();
