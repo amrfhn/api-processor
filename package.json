@@ -1,0 +1,24 @@
+{
+  "name": "api-express",
+  "version": "1.0.0",
+  "description": "API\u001b[D\u001b[D\u001b[DLocal API Server using Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "api"
+  ],
+  "author": "Amir Jefri",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nedb": "^1.8.0",
+    "node-fetch": "^3.2.6",
+    "nodemon": "^2.0.18",
+    "sequelize": "^6.21.0"
+  }
+}
